@@ -1,0 +1,42 @@
+.choosePage {
+    height: 100vh;
+    width: 100vw;
+    grid-area: main;
+    background-color: #2E1A2C;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    .title {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        
+        .titleText {
+            font-size: 36px;
+        }
+    }
+}
+
+.navBar {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    margin-top: 56px;
+
+}
+
+.btn {
+    font-size: 36px;
+    color: white;
+    text-decoration: none;
+    margin:24px 0;
+    background-color: #2E1A2C;
+    border: 0;
+}
+.cross {
+    // color: white;
+    text-decoration: none;
+    // margin:24px 0;
+    background-color: #2E1A2C;
+    border: 0;
+}

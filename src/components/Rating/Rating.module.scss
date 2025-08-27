@@ -1,0 +1,48 @@
+.starBtn {
+    // display: flex;
+    // flex-direction: row;
+    height: 100%;
+    // background-color: #f2f3f4;
+    // background: #fff;
+    background-color: transparent;
+    box-sizing: border-box;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    // width: 100%;
+}
+.rating {
+    // background-color: #f2f3f4;
+    // background: #fff;
+    box-sizing: border-box;
+}
+
+.starDarkBtn {
+    // height: 16px;
+    height: 100%;
+
+    // background-color: rgb(1, 2, 53);
+    // background-color: #001533;
+    // background: #fff;
+    // background-color: #001533;
+    background-color: rgb(0, 1, 65);
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.star {
+    // display: flex;
+    height: 100%;
+    // width: 100%;
+    // background: #fff;
+    // background-color: #f2f3f4;
+    border: 0;
+    box-sizing: border-box;
+}
+.starDark {
+    // height: 16px;
+    height: 100%;
+    // background-color: rgb(1, 2, 53);
+    background-color: #001533;
+    border: 0;
+}

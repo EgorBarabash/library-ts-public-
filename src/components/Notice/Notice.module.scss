@@ -1,0 +1,13 @@
+.notice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 50px;
+    border-left: 1px solid gray;
+}
+@media (max-width: 768px) {
+    .notice {
+        display: none;
+    }
+}

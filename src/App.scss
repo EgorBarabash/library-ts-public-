@@ -1,0 +1,36 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  
+ }
+ #root {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  gap: 0;
+  grid-template-rows: 75px 1fr;
+  grid-template-columns: 320px 1fr;
+  
+  
+  // justify-content: start;
+  grid-template-areas:
+    "head head"
+    "side main";
+  
+}
+
+@media (max-width: 768px) {
+  #root {
+    display: grid;
+    // grid-template-columns: 1fr;
+    grid-template-areas:
+    "head head"
+    "main main";
+    width: 100vw !important;
+  }
+}

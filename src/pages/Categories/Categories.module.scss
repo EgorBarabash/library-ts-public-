@@ -1,0 +1,132 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f3f4;
+  // height: calc(100vh - 80px);
+  font-family: "Arial";
+  font-size: 24px;
+  font-weight: normal;
+  grid-area: main;
+  flex-wrap: wrap;
+  padding-left: 48px;
+  // width: 100%;
+
+  .mainContent {
+    display: flex;
+    flex-wrap: wrap;
+    // flex-direction: column;
+    // width: 100%;
+    // padding-left: 48px;
+    // padding-top: 28px;
+  }
+}
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  li {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    border: 1px solid #007bff;
+    // border-radius: 24px;
+    list-style-type: none;
+    background-color: #007bff;
+    margin: 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    .genreBtn {
+      font-size: 24px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .genreBtn:hover {
+      background-color: #0056b3;
+    }
+    
+    .genreBtn:active {
+      transform: translateY(2px);
+    }
+  }
+  li:hover {
+    background-color: #0056b3;
+  }
+  
+  li:active {
+    transform: translateY(2px);
+  }
+}
+
+@media (max-width: 768px) {
+  .main, .mainDark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 0;
+}
+.mainContent {
+    // align-items: center;
+    justify-content: center;
+}
+}
+
+.mainDark {
+  display: flex;
+  flex-direction: column;
+  background-color: #001533;
+  // background-color: #000f24;
+  // height: calc(100vh - 80px);
+  font-family: 'Arial';
+  font-size: 24px;
+  font-weight: normal;
+  flex-wrap: wrap;
+  grid-area: main;
+  padding-left: 48px;
+  color: white;
+  // width: 100%;
+  
+  .mainContent {
+      display: flex;
+      flex-wrap: wrap;
+      // flex-direction: column;
+      // width: 100%;
+      // padding-left: 48px;
+      // padding-top: 28px;
+  }
+}
+
+// .genreBtnN {
+//   // display: ;
+//   background-color: blue;
+
+  
+//       // border-radius: 50%;
+//       border: 0;
+//   color: rgba(255, 255, 255, 0.836);
+//   font-size: 24px;
+//   cursor: pointer;
+// }
+.genreBtnN {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 16px;
+}
+
+.genreBtnN:hover {
+  background-color: #0056b3;
+}
+
+.genreBtnN:active {
+  transform: translateY(2px);
+}

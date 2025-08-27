@@ -1,0 +1,34 @@
+.avatar {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+    height: 100%;
+ width: 200px;
+ margin-right: 24px;
+   font-size: 12px;
+ font-family: 'Arial';
+    color: rgb(148, 147, 147);
+    .avatarImg {
+        height: 100%; 
+        width: 57px;
+       border: 1px solid gray;
+       border-radius: 50%;
+       overflow: hidden;
+       
+margin-left: 12px;
+     }
+ }
+
+
+
+
+ @media (max-width: 768px) {
+      .avatar {
+        margin: 0;
+      }
+      .avatar img {
+        display: none;
+        margin: 0;
+
+      }
+ }

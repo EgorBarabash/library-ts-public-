@@ -1,0 +1,130 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8px;
+  background-color: #f2f3f4;
+  // width: 15vw;
+  // height: 100vh;
+  grid-area: side;
+  width: 320px;
+  .navPanel {
+    display: flex;
+    flex-direction: column;
+    // margin: 18px;
+    margin-top: 40px;
+    margin-left: 45px;
+    color: gray;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "Arial";
+    border-bottom: 1px solid gray;
+    padding-bottom: 18px;
+    // height: 100%;
+    .btn {
+      border: 0;
+      margin: 6px 0;
+      // margin-top: 4px;
+      padding: 0;
+      text-decoration: none;
+      color: black;
+      .btnContent {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-family: "Arial";
+        height: 30px;
+        .btnText {
+          display: flex;
+          align-items: center;
+          margin-left: 8px;
+        }
+      }
+    }
+    .btn:hover {
+      // text-decoration: line-through;
+    }
+  }
+}
+.btnCreate {
+  border: 0;
+  background-color: #3dbb76;
+  height: 40px;
+  width: 140px;
+  border-radius: 5px;
+  color: white;
+  margin: 8px 0;
+  font-size: 16px;
+}
+.title {
+  margin-bottom: 8px;
+}
+
+.sideImg {
+  height: 20px;
+  margin-bottom: 4px;
+}
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+a.active {
+  opacity: 0.5;
+  background-color: gray;
+}
+// .active {
+//     text-decoration: line-through;
+// }
+
+.sidebarDark {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+    // background-color: rgb(1, 2, 53);
+    background-color: #001533;
+    // width: 15vw;
+    // height: 100vh;
+    grid-area: side;
+    width: 320px;
+    .navPanel {
+      display: flex;
+      flex-direction: column;
+      // margin: 18px;
+      margin-top: 40px;
+      margin-left: 45px;
+      color: white;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-family: "Arial";
+      border-bottom: 1px solid white;
+      padding-bottom: 18px;
+      // height: 100%;
+      .btn {
+        border: 0;
+        margin: 6px 0;
+        // margin-top: 4px;
+        padding: 0;
+        text-decoration: none;
+        color: white;
+        .btnContent {
+          display: flex;
+          align-items: center;
+          font-size: 16px;
+          font-family: "Arial";
+          height: 30px;
+          .btnText {
+            display: flex;
+            align-items: center;
+            margin-left: 8px;
+          }
+        }
+      }
+      .btn:hover {
+        // text-decoration: line-through;
+      }
+      .btnCreate {
+        background-color: #2a7e50;
+      }
+    }
+}

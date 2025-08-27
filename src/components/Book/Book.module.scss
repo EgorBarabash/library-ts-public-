@@ -1,0 +1,209 @@
+.book {
+    // height: 300px;
+    width:200px;
+    text-decoration: none;
+    color: black;
+    // background-color: white;
+    margin: 28px 28px 0px 0;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
+    .cardImg {
+        display: flex;  
+        justify-content: center;
+        height: 240px;
+        // height: 300px;
+        // width: 180px;
+        // border: 1px solid;
+        border-radius: 8px;
+        // margin: 4px;
+    }
+    .cardContent {
+        display: flex;
+        flex-direction: column;
+        // padding-top: 8px;
+        font-family: 'Arial';
+        width: 200px;
+        height: 80px;
+        // margin-top: 12px;
+        // padding-top: 12px;
+        .title  {
+            display: flex;
+            align-items: flex-start;
+            font-size: 14px;
+            width: 100%;
+        }
+        .autor {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: gray;
+            padding: 2px 0 0 0;
+        }
+        .ratingBar {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            box-sizing: border-box;
+            // box-sizing: border-box;
+            background: #fff;
+            // width: 50%;
+            .rating {
+                display: flex;
+                height: 16px;
+                width: 50%;
+                box-sizing: border-box;
+            }
+        }
+       
+    }
+}
+.bookDark {
+    // height: 300px;
+    width: 200px;
+    text-decoration: none;
+    color: white;
+    // background-color: white;
+    margin: 36px 36px 0 0;
+    background-color: rgb(0, 1, 65);
+    // box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
+    .cardImg {
+        display: flex;  
+        justify-content: center;
+        height: 240px;
+        // height: 300px;
+        // width: 180px;
+        // border: 1px solid;
+        border-radius: 8px;
+        // margin: 4px;
+    }
+    .cardContent {
+        display: flex;
+        flex-direction: column;
+        // padding-top: 8px;
+        font-family: 'Arial';
+        width: 200px;
+        height: 80px;
+        // margin-top: 12px;
+        // padding-top: 12px;
+        .title  {
+            display: flex;
+            align-items: flex-start;
+            font-size: 14px;
+            width: 100%;
+        }
+        .autor {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: gray;
+            padding: 2px 0 0 0;
+        }
+        .ratingBar {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            box-sizing: border-box;
+            // box-sizing: border-box;
+            background-color: rgb(0, 1, 65);
+            // width: 50%;
+            .rating {
+                display: flex;
+                height: 16px;
+                box-sizing: border-box;
+            }
+        }
+       
+    }
+}
+
+
+.bookBtn {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: none;
+}
+// button {
+   
+// }
+.book, .bookDark {
+    position: relative;
+    // background-color: #fff;
+  }
+
+.bookMenu {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 50%;
+    // justify-content: ;
+    // position: absolute;
+    // top: -25px;
+    // right: 0;
+    // width: 50px;
+    height: 20px;
+    cursor: pointer;
+    padding-left: 10px;
+    // background-color: white;
+    // opacity: 0.8;
+}
+.bookMenuClicked {
+    display: flex;
+    align-items: flex-end;
+    height: 20px;
+    justify-content: space-between;
+    padding-left: 10px;
+    // background-color: #003cff;
+    width: 50%;
+    // cursor: pointer;
+    // opacity: 1;
+
+}
+@keyframes slideInFromRight {
+    from {
+      transform: translateX(5%);
+      opacity: 0.2;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .bookMenuClicked  {
+    animation: slideInFromRight 0.5s ease-in-out;
+
+    // opacity: 0;
+  }
+
+.menuContent {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    cursor: pointer;
+    
+}
+
+.menuContent:hover {
+    animation: slideInFromRight 0.5s ease-in-out;
+}
+
+.message {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    // transform: translate(-50%, -50%);
+    padding: 10px;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    background-color: #ffe6e6;
+    color: #ff0000;
+    z-index: 1;
+    font-size: 12px;
+  }
